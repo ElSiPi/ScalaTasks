@@ -19,7 +19,7 @@ object FunctionExercises extends App{
 
   def getCityYear(p0:Int, perc:Double, delta:Int, p:Int): Int = {
     var counter = 0
-    var yearlyResult = p0 * perc/100.00 + delta.ceil.toInt
+    var yearlyResult = p0 * perc/100.00 + delta
     if(yearlyResult < p0) {
       counter = -1
     }
