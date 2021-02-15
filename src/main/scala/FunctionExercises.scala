@@ -2,7 +2,7 @@ object FunctionExercises extends App{
 
   def isPalindrome(text:String): Boolean = {
     val textWhitespacesRemoved = text.replace(" ", "")
-    textWhitespacesRemoved.equalsIgnoreCase(textWhitespacesRemoved.reverse))
+    textWhitespacesRemoved.equalsIgnoreCase(textWhitespacesRemoved.reverse)
 
   }
   isPalindrome("This is a palindrome")
