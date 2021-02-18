@@ -1,4 +1,3 @@
-import scala.math.Ordering.Implicits.seqOrdering
 
 object GetCommon extends App{
 
