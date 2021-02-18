@@ -22,8 +22,11 @@ object GetCommon extends App{
     //https://en.wikipedia.org/wiki/Pangram
     // (case is not important here)
     //this function should work on other languages too, if we pass it different alphabet
-    false
+    val textForTesting = text.replace(" ", "")
+    textForTesting.toSet == alphabet.toSet
+    //false
   }
 
   println(isPangram("The five boxing wizards jump quickly.")) //should be true
+  println(isPangram("The quick brown fox jumps over a lazy dog"))
 }
