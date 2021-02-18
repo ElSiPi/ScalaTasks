@@ -7,6 +7,7 @@ object GetCommon extends App{
     val set2 = s2.toSet
     val set3 = s3.toSet
     val commonElem = (set1 & set2 & set3).toSeq.sorted
+    (set1.toSet & set2.toSet & set3.toSet).toSeq.sorted
     commonElem
 
   }
@@ -21,8 +22,7 @@ object GetCommon extends App{
     //https://en.wikipedia.org/wiki/Pangram
     // (case is not important here)
     //this function should work on other languages too, if we pass it different alphabet
-    val textForTesting = text.replace(" ", "")
-    textForTesting.toSet == alphabet.toSet
+    alphabet.toSet.subsetOf(text.toLowerCase().toSet)
     //false
   }
 
