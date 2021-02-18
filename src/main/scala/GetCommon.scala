@@ -7,7 +7,7 @@ object GetCommon extends App{
     val set2 = s2.toSet
     val set3 = s3.toSet
     val commonElem = (set1 & set2 & set3).toSeq.sorted
-    (set1.toSet & set2.toSet & set3.toSet).toSeq.sorted
+    //(set1.toSet & set2.toSet & set3.toSet).toSeq.sorted
     commonElem
 
   }
